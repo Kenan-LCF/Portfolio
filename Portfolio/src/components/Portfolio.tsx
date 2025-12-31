@@ -1,10 +1,9 @@
 const Portfolio = () => {
     return (
-        <div className="flex justify-center pt-64 pb-20">
+        <div className="flex justify-center pt-64">
             <div className="bg-zinc-900 border border-zinc-700 flex flex-col w-[80%] h-[750px]">
                 {/* title bar */}
                 <div className="flex items-center justify-between p-4 border-b border-zinc-700">
-
                     <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-zinc-600 hover:bg-red-500 transition-colors cursor-pointer"></div>
                         <div className="w-3 h-3 rounded-full bg-zinc-600 hover:bg-yellow-500 transition-colors cursor-pointer"></div>
@@ -22,17 +21,25 @@ const Portfolio = () => {
                         </div>
 
                         <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
-                            <div className="w-2 h-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
-                            <div className="w-2 h-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
+                            <div className="w-3 h-3 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
+                            <div className="w-3 h-3 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
+                            <div className="w-3 h-3 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-colors cursor-pointer"></div>
                         </div>
                     </div>
                 </div>
-                {/* Container */}
-                <div>
 
+
+                <div className="flex flex-1">
+                    {/* column left*/}
+                    <div className="w-[40%] border-r  border-zinc-700 p-6">
+                        
+                    </div>
+
+                    {/* column right - 60% */}
+                    <div className="w-[60%]  p-6">
+                        
+                    </div>
                 </div>
-
             </div>
         </div>
     )
