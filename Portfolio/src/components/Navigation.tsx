@@ -1,47 +1,43 @@
-const Navigation = () => {
-  return (
-   <nav className="fixed top-0 left-0 right-0 bg-black backdrop-blur-md text-gray-700 px-6 py-4 z-50 shadow-lg">
-  <div className="container mx-auto flex items-center relative">
-    
-    <a href="#hero" className="text-2xl font-bold hover:text-white transition absolute left-0">
-      Kenan LCF
-    </a>
-    
-    <ul className="flex gap-24 mx-auto text-xl">
-      <li>
-        <a href="#accueil" className="hover:text-white transition">
-          Accueil
-        </a>
-      </li>
-      <li>
-        <a href="#about" className="hover:text-white transition">
-          À propos
-        </a>
-      </li>
-      <li>
-        <a href="#parcours" className="hover:text-white transition">
-          Parcours
-        </a>
-      </li>
-      <li>
-        <a href="#projets" className="hover:text-white transition">
-          Projets
-        </a>
-      </li>
-      <li>
-        <a href="#competances" className="hover:text-white transition">
-          Competances
-        </a>
-      </li>
-      <li>
-        <a href="#contact" className="hover:text-white transition">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-  )
+interface NavLink {
+  href: string;
+  label: string;
 }
 
-export default Navigation
+const Navigation = () => {
+  const navLinks: NavLink[] = [
+    { href: '#accueil', label: 'Accueil' },
+    { href: '#about', label: 'À propos' },
+    { href: '#parcours', label: 'Parcours' },
+    { href: '#projets', label: 'Projets' },
+    { href: '#competances', label: 'Compétences' },
+    { href: '#contact', label: 'Contact' },
+  ];
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 h-24 bg-black opacity-95 text-gray-500 px-6 py-4 z-50 shadow-lg border-b border-gray-500">
+
+      <div className="container mx-auto flex items-center relative h-full">
+
+
+        <a href="#hero" className="text-xl font-bold hover:text-white transition absolute left-0">
+
+          Kenan LCF
+        </a>
+
+        <ul className="flex gap-24 mx-auto text-lg">
+
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a href={link.href} className="hover:text-white transition">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        feature for change language
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
