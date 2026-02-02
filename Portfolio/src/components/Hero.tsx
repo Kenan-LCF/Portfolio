@@ -1,7 +1,7 @@
 import Portfolio from "./Portfolio";
 const Hero = () => {
     return (
-        <div id="accueil" className="min-h-screen relative py-20">
+        <div id="hero" className="min-h-screen relative py-20">
 
 
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-white/5 blur-[150px]" />
