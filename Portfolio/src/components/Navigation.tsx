@@ -5,11 +5,10 @@ interface NavLink {
 
 const Navigation = () => {
   const navLinks: NavLink[] = [
-    { href: '#accueil', label: 'Accueil' },
     { href: '#about', label: 'À propos' },
-    { href: '#parcours', label: 'Parcours' },
-    { href: '#projets', label: 'Projets' },
-    { href: '#competances', label: 'Compétences' },
+    { href: '#experience', label: 'Parcours' },
+    { href: '#project', label: 'Projets' },
+    { href: '#skills', label: 'Compétences' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -34,7 +33,7 @@ const Navigation = () => {
             </li>
           ))}
         </ul>
-        feature for change language
+        
       </div>
     </nav>
   );
