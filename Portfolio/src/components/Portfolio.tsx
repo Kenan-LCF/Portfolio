@@ -2,6 +2,10 @@ import img_react from '../assets/React.png';
 import img_TypeScript from '../assets/TypeScript.png';
 import img_Tailwind from '../assets/Tailwind.png';
 import img_HTML from '../assets/HTML-CSS.png';
+import img_nodejs from '../assets/nodejs-logo.png';
+import img_express from '../assets/express-js.jpg';
+import img_mysql from '../assets/MySQL.png';
+import img_docker from '../assets/docker.png';
 
 
 interface Project {
@@ -22,15 +26,15 @@ const Portfolio = () => {
     ];
 
     const backendSkills: Skill[] = [
-        { name: "Node.js", level: "débutant", image: img_react },
-        { name: "Express", level: "débutant", image: img_react },
-        { name: "MySQL", level: "intermédiaire", image: img_react },
-        { name: "Docker", level: "débutant", image: img_react }
+        { name: "Node.js", level: "débutant", image: img_nodejs },
+        { name: "Express", level: "débutant", image: img_express },
+        { name: "MySQL", level: "intermédiaire", image: img_mysql },
+        { name: "Docker", level: "débutant", image: img_docker }
     ];
 
     const projects: Project[] = [
         { title: "Portfolio", date: "en cours" },
-        { title: "e-commerce", date: "pas commencé" },
+        { title: "je n'ai aucune idée", date: "pas commencé" },
         { title: "To-do list", date: "2025-11" },
     ];
     return (
